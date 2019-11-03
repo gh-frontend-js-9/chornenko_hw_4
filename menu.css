@@ -1,0 +1,42 @@
+.mainmenubtn {
+    width: 25px;
+    height: 19px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer; 
+    
+  }
+
+.mainmenubtn:hover {
+    background-color: Transparent;
+    }
+    
+.nav-menu-mobile {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    
+}
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.nav-menu-mobile:hover .dropdown-child {
+    display: block;
+    position: fixed;
+}
+.mainmenubtn img {
+    width: 25px;
+    height: 19px;
+    
+  
+}
