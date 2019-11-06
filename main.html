@@ -1,247 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-	<script src="https://kit.fontawesome.com/2b008ac55f.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="menu.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900&display=swap" rel="stylesheet">
-	
-	<title>Forkio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <script src="https://kit.fontawesome.com/2b008ac55f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900&display=swap" rel="stylesheet">
+
+    <title>Forkio</title>
 </head>
 <body>
-	<nav>
-		<div><img src="img/logo_general.png" alt="General logo"></div>
-		<section class="nav-mainmenu">
-		<ul>
-			<li>
-				<a href="#">Overview</a>
-			</li>
-			<li>
-				<a href="#"> About Fork </a>
-			</li>
-			<li>
-				<a href="#">Buying Options</a>
-			</li>
-			<li>
-				<a href="#">Support</a>
-			</li>
-			
-		</ul>
-		
-	</section>
-	<div><div class="nav-menu-mobile">
-  			<button class="mainmenubtn"><img src="img/menu.png" alt="menu"></button>
-  		 		<div class="dropdown-child">
-   			 		<a href="#">Overview</a>
-    				<a href="#">About Fork</a>
-   		 			<a href="#">Buying Options</a>
-    				<a href="#">Support</a>
-  				</div>
-		 </div><button class="bttn-subscribe">Buy Now</button></div>
-	</nav>
-	
-	<header>
-		<h1>Fork App</h1>
-		<h3>A real gamechanger in the world of web development</h3>
-		<span>v. 2.8 For Mac and Windows</span>
-		<div><button>Download For Free Now</button></div>
-	</header>
-
-	<main>
-		<section class="section-main-txt">
-			<h2>Revolutionary editor</h2>	
-			<p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id<br> metus id quam auctor molestie eget ut augue. </p>
-
-			<ul>
-				<li>
-					<button><i class="far fa-eye"></i>Watch</button><button class="whitebtn">234,7</button>
-				</li>
-				<li>
-					<button><i class="fas fa-star"></i>Star</button><button class="whitebtn">6789,56</button>
-				</li>
-				<li>
-					<button><i class="fas fa-code-branch"></i>Fork</button><button class="whitebtn">456,1</button>
-				</li>
-			</ul>
-			
-		</section>
-		<section class="list-example-code">
-
-			<ul>
-				<li>
-					<ul class="ex_code">
-				<li>
-					<div class="list-first-examplepic"></div>
-					<div class="list-txt-example"><h6>Creatred to Make The Web Better</h6>
-					<p>Aenean cursus imperdiet nisl id fermentum.<br> Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p></div>
-				</li>
-				<li>
-					<div class="list-second-examplepic"></div>
-					<div class="list-txt-example"><h6>Incredibly Powerful Tool</h6>
-					<p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p></div>
-				</li>
-				<li>
-					<div class="list-third-examplepic"></div>
-					<div class="list-txt-example"><h6>Experimental Stuff</h6>
-					<p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p></div>
-				</li>
-				<li>
-					<div class="list-four-examplepic"></div>
-					<div class="list-txt-example"><h6>Creatred to Make The Web Better</h6>
-					<p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p></div>
-				</li>
-			</ul>
-				</li>
-			<li><div class="list-txt-head"><span >&lt;Here is what you get&gt;</span><div class="picture-example-code"><img src="img/code.png" alt="Computer code"></div></div></li>
-			</ul>
-		</section>
+<!--1. I see a bunch of inconsistencies between design and your work. Fonts, font sizes, margins etc. Are you taking enough time to check all the details?-->
+<!--2. Your page sections are not full width, but should be.-->
+<!--3. Responsive doesn't mean you should fix the width, responsive means it should work even on smaller screens: https://www.dropbox.com/s/7j5femluygx5cdj/Screenshot%202019-11-06%2009.18.46.png?dl=0-->
+<!--4. did you validate through validator both html and css? ;)-->
 
 
-		<section class="section-account-inf">
-			<div class="account_inf"><img src="img/icon_steve.png" alt="Account"><h3>Steven Strange</h3><span>@DoctorS</span></div><div>
-				<p><span>@Pixelbuddha</span>Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p><br><br>
-				<span>2 hour ago</span></div>
-				<ul>
-					<li><button class="list-bttn-git"><img src="img/icon_git.png" alt="GitHub">   GitHub</button> </li>
-					<li><button class="list-bttn-twit"><img src="img/icon_twit.png" alt="Twitter">  Twitter</button></li>
-					<li><button class="list-bttn-faceb"><img src="img/icon_faceb.png" alt="Facebook">  Facebook</button></li>
-				</ul>	
-				<ul class="list-account-follow">
-				<li>
-					<span>7 352 Followers</span>
-				</li>
-				<li>
-					<span>136 312 Followers</span>
-				</li>
-				<li>
-					<span>218 092 Subscribers</span>
-				</li>
-			</ul>
-		</section>
+<!--nav it most of the cases should be part of header, that's the case as well-->
+<nav>
+    <div><img src="img/logo_general.png" alt="General logo"></div>
+    <section class="nav-mainmenu">
+        <ul>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+            <li>
+                <a href="#"> About Fork </a>
+            </li>
+            <li>
+                <a href="#">Buying Options</a>
+            </li>
+            <li>
+                <a href="#">Support</a>
+            </li>
 
-		<section class="section-hower-block">
+        </ul>
 
-			<section class="company-inf">
-				<h2>People Are Talking About Fork</h2>
-					<div class="list-logo-inf">
-						<ul>
-							<li>
-								<div><div class="company-first-logo"></div><p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p></div>
-							</li>
-							<li>
-								<div class="company-second-logo"></div><p>Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
-							</li>
-							<li>
-								<div class="company-third-logo"></div><p>In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
-							</li>
-						</ul>
-						<ul class="bottom_list">
-							<li>
-								<div class="company-four-logo"></div><p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-							</li>
-							<li>
-								<div class="company-five-logo"></div><p>Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </p>
-							</li>
-							<li>
-								<div class="company-six-logo"></div><p>Fusce pharetra erat id odio blandit, nec  pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
-							</li>
-						</ul>
-				
-					</div>
+    </section>
+    <div>
+        <div class="nav-menu-mobile">
+            <button class="mainmenubtn"><img src="img/menu.png" alt="menu"></button>
+            <div class="dropdown-child">
+                <a href="#">Overview</a>
+                <a href="#">About Fork</a>
+                <a href="#">Buying Options</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+        <button class="bttn-subscribe">Buy Now</button>
+    </div>
+</nav>
 
-			
-			<section class="list-animation-card">
-				<h2>Fork Subscription Pricing</h2>
-				<ul>
-					<li>
-						<div class="forksub"><h4>Students</h4><span class="card-txt-price">$29</span><br><span class="card-txt-prozoro">PRE MONTH</span><br><img src="img/line.png" alt="line"><br><span>Personal License</span><button>PURCHASE</button></div>
-					</li>
-					<li>
-						<div class="forksub"><h4>professional</h4><span class="card-txt-price">$59</span><br><span class="card-txt-prozoro">PRE MONTH</span><br><img src="img/line.png" alt="line"><br><span>Professional License Email Support</span><button>PURCHASE</button></div>
-					</li>
-					<li>
-						<div class="forksub"><h4>agency</h4><span class="card-txt-price">$99</span><br><span class="card-txt-prozoro">PRE MONTH</span><br><img src="img/line.png" alt="line"><br><span>1-12 Team Members Phone Support</span><button>PURCHASE</button></div>
-					<li>
-						<div class="forksub"><h4>enterprise</h4><span class="card-txt-price ">$159</span><br><span class="card-txt-prozoro">PRE MONTH</span><br><img src="img/line.png" alt="line"><br><span>Unlimited Team Members 24/ 7 </span><button>PURCHASE</button></div>
-					</li>
-				</ul>
-			<p>Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-			</section>
-		
-		</section>
+<header>
+    <h1>Fork App</h1>
+    <h3>A real gamechanger in the world of web development</h3>
+    <span>v. 2.8 For Mac and Windows</span>
+    <div>
+        <button>Download For Free Now</button>
+    </div>
+</header>
 
-		
-		</section>
+<main>
+    <section class="section-main-txt">
+        <h2>Revolutionary editor</h2>
+        <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id<br> metus
+            id quam auctor molestie eget ut augue. </p>
 
-		
-		
-	</main>
+<!--        no need to make these as separate buttons, embed it from any repository and just paste it here.-->
+        <ul>
+            <li>
+                <button><i class="far fa-eye"></i>Watch</button>
+                <button class="whitebtn">234,7</button>
+            </li>
+            <li>
+                <button><i class="fas fa-star"></i>Star</button>
+                <button class="whitebtn">6789,56</button>
+            </li>
+            <li>
+                <button><i class="fas fa-code-branch"></i>Fork</button>
+                <button class="whitebtn">456,1</button>
+            </li>
+        </ul>
 
-	<footer>
-		<section class="personal-inf-subscribe">
-			<h4>Subscribe To Our Newsletter</h4>
-			<input type="text" name="Email" placeholder="   Email..">
-			<button class="bttn-subscribe">Subscribe</button>
-			
-		</section>
-		<section class="section-general-info">
-			<ul class="list-info">
-				<li class="first-info-colum">
-					<h5>New in Release 2.8</h5>
-						<div><h6>Fully Available: Live Preview Support for Multiple Browsers</h6><p>Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor tortor at odio condimentum, sit amet fringilla ligula maximus. Mauris venenatis nisl nisi, et dictum dui aliquet nec. Sed erat, nec aliquam vel, aliquam ac felis. </p>
-						<h6>Improved Support for Typing </h6><p>Nulla purus quam, pulvinar sed ante et, feugiat maximus velit. Donec eu elit mauris. </p>
-						<h6>Improved Stability</h6><p>Proin id ligula eget massa tincidunt molestie. Morbi urna lectus, molestie vel quam vel, iaculis fermentum nunc. Morbi imperdiet, leo in interdum pretium.</p><button>Go to Release Log</button></div>
-				</li>
-				<li class="second-info-colum"><h5>Popular Extensions</h5>
-					<div><h6>Custom Themes 1.1</h6><p>Etiam viverra vulputate diam, pulvinar cursus augue egestas ullamcorper. </p>
-					<h6>Filter Forge</h6><p>Nulla purus quam, pulvinar sed et, feugiat maximus velit.</p>
-					<h6>WebZap</h6><p>Morbi imperdiet, leo in interdum pretium, elit eros dapibus velit, eu posuere quam diam vitae orci. Suspendisse interdum accumsan magna vitae commodo.</p><h6>Renamy</h6><p>Vivamus consectetur suscipit elit, ut lacinia diam elementum et.</p><button>Go to Marketplace</button></div>  
-				</li>
-				<li class="second-info-colum">
-					<h5>New From the Blog</h5>
-					<div><h6>Morbi imperdiet, leo in interdum pretium.</h6><p>February 18, 2015</p>
-						<h6>Donec orci ante, porta vel nulla quis, aliquet hendrerit leo.</h6><p>February 12, 2015</p>
-						<h6>Suspendisse egestas vulputate luctus.</h6><p>February 6, 2015</p>
-						<h6>Quisque varius ante lorem, eget pretium purus hendrerit a egestas. </h6><p>February 2, 2015</p>
-						<h6>Phasellus in augue risus. </h6><p>January 23, 2015</p><button>Go to Blog</button></div>
-				</li>
-			</ul>
-		</section>
-		<section class="footer-list-inf">
-			<ul class="list-inform">
-				<li>
-					<div class="img_logo"><img src="img/logo_general.png" alt="Logo Fokio"><p>Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.</p></div>
-				</li>
-			<li>
-				<nav>
-					<div><h3>Navigation</h3>
-					<ul class="list-navigation">
-						<li>
-							<a href="#">Overview</a>
-						</li>
-						<li>
-							<a href="#"> About Fork </a>
-						</li>
-						<li>
-							<a href="#">Buying Options</a>
-						</li>
-						<li>
-							<a href="#">Support</a>
-						</li>
-					</ul></div>
-				</nav>
-			</li>
-			<li>
-				<div><h2>347 567 78 90</h2><span>AVAILABLE FROM 12PM - 18PM</span><h3>New York, NY</h3><p>560 Judah St & 15th Ave, Apt 5 San Francisco, CA, 230903</p></div>
-			</li>
-			<li>
-				<div><p><h3>Info</h3>Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.</p></div>
-			</li>
-		</ul>
-		</section>
-	</footer>
+    </section>
+    <section class="list-example-code">
+
+<!--        I see you have a problem in understanding BEM, how about you prepare specific questions on what is not clear and we figure it out together?-->
+        <ul>
+            <li>
+                <ul class="ex_code">
+                    <li>
+                        <div class="list-first-examplepic"></div>
+                        <div class="list-txt-example"><h6>Creatred to Make The Web Better</h6>
+                            <p>Aenean cursus imperdiet nisl id fermentum.<br> Aliquam pharetra dui laoreet vulputate
+                                dignissim. Sed id metus id quam auctor molestie eget ut augue.</p></div>
+                    </li>
+                    <li>
+                        <div class="list-second-examplepic"></div>
+                        <div class="list-txt-example"><h6>Incredibly Powerful Tool</h6>
+                            <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-third-examplepic"></div>
+                        <div class="list-txt-example"><h6>Experimental Stuff</h6>
+                            <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-four-examplepic"></div>
+                        <div class="list-txt-example"><h6>Creatred to Make The Web Better</h6>
+                            <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa
+                                placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="list-txt-head"><span>&lt;Here is what you get&gt;</span>
+                    <div class="picture-example-code"><img src="img/code.png" alt="Computer code"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="section-account-inf">
+<!--        don't put everything into one line-->
+        <div class="account_inf"><img src="img/icon_steve.png" alt="Account">
+            <h3>Steven Strange</h3><span>@DoctorS</span></div>
+        <div>
+            <p><span>@Pixelbuddha</span>Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean
+                faucibus mollis risus. Praesent sit amet erat eget eros.</p><br><br>
+            <span>2 hour ago</span></div>
+        <ul>
+            <li>
+                <button class="list-bttn-git"><img src="img/icon_git.png" alt="GitHub"> GitHub</button>
+            </li>
+            <li>
+                <button class="list-bttn-twit"><img src="img/icon_twit.png" alt="Twitter"> Twitter</button>
+            </li>
+            <li>
+                <button class="list-bttn-faceb"><img src="img/icon_faceb.png" alt="Facebook"> Facebook</button>
+            </li>
+        </ul>
+        <ul class="list-account-follow">
+            <li>
+                <span>7 352 Followers</span>
+            </li>
+            <li>
+                <span>136 312 Followers</span>
+            </li>
+            <li>
+                <span>218 092 Subscribers</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-hower-block">
+
+<!--        I'm not sure why you're putting all logos as backgrounds to divs, can you explain in DM Slack?-->
+        <section class="company-inf">
+            <h2>People Are Talking About Fork</h2>
+            <div class="list-logo-inf">
+                <ul>
+                    <li>
+                        <div>
+                            <div class="company-first-logo"></div>
+                            <p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim
+                                magna. Sed varius urna et pulvinar venenatis. </p></div>
+                    </li>
+                    <li>
+                        <div class="company-second-logo"></div>
+                        <p>Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac,
+                            mollis eleifend nibh.</p>
+                    </li>
+                    <li>
+                        <div class="company-third-logo"></div>
+                        <p>In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet
+                            nibh. Morbi tempus auctor felis ac vehicula. </p>
+                    </li>
+                </ul>
+                <ul class="bottom_list">
+                    <li>
+                        <div class="company-four-logo"></div>
+                        <p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna.
+                            Sed varius urna et pulvinar venenatis. </p>
+                    </li>
+                    <li>
+                        <div class="company-five-logo"></div>
+                        <p>Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id
+                            arcu consequat faucibus. </p>
+                    </li>
+                    <li>
+                        <div class="company-six-logo"></div>
+                        <p>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor
+                            cursus massa et vestibulum.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <section class="list-animation-card">
+                <h2>Fork Subscription Pricing</h2>
+                <ul>
+                    <li>
+<!--                        again, one line is a disaster-->
+                        <div class="forksub"><h4>Students</h4><span class="card-txt-price">$29</span><br><span
+                                class="card-txt-prozoro">PRE MONTH</span><br><img src="img/line.png"
+                                                                                  alt="line"><br><span>Personal License</span>
+                            <button>PURCHASE</button>
+<!--                            no uppercase in html, do it with css-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="forksub"><h4>professional</h4><span class="card-txt-price">$59</span><br><span
+                                class="card-txt-prozoro">PRE MONTH</span><br><img src="img/line.png"
+                                                                                  alt="line"><br><span>Professional License Email Support</span>
+                            <button>PURCHASE</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="forksub"><h4>agency</h4><span class="card-txt-price">$99</span><br><span
+                                class="card-txt-prozoro">PRE MONTH</span><br><img src="img/line.png"
+                                                                                  alt="line"><br><span>1-12 Team Members Phone Support</span>
+                            <button>PURCHASE</button>
+                        </div>
+                    <li>
+                        <div class="forksub"><h4>enterprise</h4><span class="card-txt-price ">$159</span><br><span
+                                class="card-txt-prozoro">PRE MONTH</span><br><img src="img/line.png"
+                                                                                  alt="line"><br><span>Unlimited Team Members 24/ 7 </span>
+                            <button>PURCHASE</button>
+                        </div>
+                    </li>
+                </ul>
+                <p>Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id,
+                    imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            </section>
+
+        </section>
+
+
+    </section>
+
+
+</main>
+
+<!--footer is starting not here-->
+<footer>
+    <section class="personal-inf-subscribe">
+        <h4>Subscribe To Our Newsletter</h4>
+<!--        this should be wrapped into a form-->
+        <input type="text" name="Email" placeholder="   Email..">
+        <button class="bttn-subscribe">Subscribe</button>
+
+    </section>
+    <section class="section-general-info">
+        <ul class="list-info">
+<!--            there's no need in making a large list here, just 3 blocks / sections.-->
+            <li class="first-info-colum">
+                <h5>New in Release 2.8</h5>
+                <div><h6>Fully Available: Live Preview Support for Multiple Browsers</h6>
+                    <p>Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor tortor at odio
+                        condimentum, sit amet fringilla ligula maximus. Mauris venenatis nisl nisi, et dictum dui
+                        aliquet nec. Sed erat, nec aliquam vel, aliquam ac felis. </p>
+                    <h6>Improved Support for Typing </h6>
+                    <p>Nulla purus quam, pulvinar sed ante et, feugiat maximus velit. Donec eu elit mauris. </p>
+                    <h6>Improved Stability</h6>
+                    <p>Proin id ligula eget massa tincidunt molestie. Morbi urna lectus, molestie vel quam vel, iaculis
+                        fermentum nunc. Morbi imperdiet, leo in interdum pretium.</p>
+                    <button>Go to Release Log</button>
+                </div>
+            </li>
+            <li class="second-info-colum"><h5>Popular Extensions</h5>
+                <div><h6>Custom Themes 1.1</h6>
+                    <p>Etiam viverra vulputate diam, pulvinar cursus augue egestas ullamcorper. </p>
+                    <h6>Filter Forge</h6>
+                    <p>Nulla purus quam, pulvinar sed et, feugiat maximus velit.</p>
+                    <h6>WebZap</h6>
+                    <p>Morbi imperdiet, leo in interdum pretium, elit eros dapibus velit, eu posuere quam diam vitae
+                        orci. Suspendisse interdum accumsan magna vitae commodo.</p><h6>Renamy</h6>
+                    <p>Vivamus consectetur suscipit elit, ut lacinia diam elementum et.</p>
+                    <button>Go to Marketplace</button>
+                </div>
+            </li>
+            <li class="second-info-colum">
+                <h5>New From the Blog</h5>
+                <div><h6>Morbi imperdiet, leo in interdum pretium.</h6>
+<!--                    date is not -->
+                    <p>February 18, 2015</p>
+                    <h6>Donec orci ante, porta vel nulla quis, aliquet hendrerit leo.</h6>
+                    <p>February 12, 2015</p>
+                    <h6>Suspendisse egestas vulputate luctus.</h6>
+                    <p>February 6, 2015</p>
+                    <h6>Quisque varius ante lorem, eget pretium purus hendrerit a egestas. </h6>
+                    <p>February 2, 2015</p>
+                    <h6>Phasellus in augue risus. </h6>
+                    <p>January 23, 2015</p>
+                    <button>Go to Blog</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+<!--    footer is starting here-->
+    <section class="footer-list-inf">
+        <ul class="list-inform">
+            <li>
+                <div class="img_logo"><img src="img/logo_general.png" alt="Logo Fokio">
+                    <p>Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.</p></div>
+            </li>
+            <li>
+                <nav>
+                    <div><h3>Navigation</h3>
+                        <ul class="list-navigation">
+                            <li>
+                                <a href="#">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#"> About Fork </a>
+                            </li>
+                            <li>
+                                <a href="#">Buying Options</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </li>
+            <li>
+<!--                you could use address here, don't you? no need for titles.-->
+                <div><h2>347 567 78 90</h2><span>AVAILABLE FROM 12PM - 18PM</span>
+                    <h3>New York, NY</h3>
+                    <p>560 Judah St & 15th Ave, Apt 5 San Francisco, CA, 230903</p></div>
+            </li>
+            <li>
+                <div><p>
+<!--                    too much titles + you put it inside paragraph, that breaks validation -->
+                    <h3>Info</h3>Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.</p></div>
+            </li>
+        </ul>
+    </section>
+</footer>
 
 
 </body>

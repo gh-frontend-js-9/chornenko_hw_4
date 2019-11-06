@@ -1,23 +1,25 @@
+/* this should be a sass file ;)*/
+
 .mainmenubtn {
     width: 25px;
     height: 19px;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
-    cursor: pointer; 
-    
+    cursor: pointer;
+
   }
 
 .mainmenubtn:hover {
     background-color: Transparent;
     }
-    
+
 .nav-menu-mobile {
     display: inline-block;
     position: absolute;
     top: 40px;
     right: 200px;
-    
+
 }
 .dropdown-child {
     display: none;
@@ -37,6 +39,6 @@
 .mainmenubtn img {
     width: 25px;
     height: 19px;
-    
-  
+
+
 }
